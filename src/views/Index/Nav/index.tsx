@@ -163,7 +163,8 @@ const SlideMenu = styled.div`
     animation: ${FadeOut} .5s ease forwards;
   }
 `
-const SlideMenuItem = styled.div`
+const SlideMenuItem = styled.a`
+  display: block;
   padding: 16px 24px;
   font-size: 18px;
   &:active {
@@ -226,15 +227,13 @@ const Nav = () => {
           </Logo>
           <Title>zk.Link</Title>
           <Menu>
-            <Coming offset={[0, -10]}>
-              <MenuItem>Documentation</MenuItem>
-            </Coming>
-            <Coming offset={[0, -10]}>
+            <MenuItem href="https://docs.zk.link">Documentation</MenuItem>
+            {/* <Coming offset={[0, -10]}>
               <MenuItem>Analytics</MenuItem>
             </Coming>
             <Coming offset={[0, -10]}>
               <MenuItem>Vote</MenuItem>
-            </Coming>
+            </Coming> */}
             <Coming>
               <Enter>
                 Enter App
@@ -257,18 +256,17 @@ const Nav = () => {
 
         </Holder>
         <SlideMenu className={animeClass}>
-          <SlideMenuItem>
+          <SlideMenuItem href="https://docs.zk.link">
             Documentation
-            <ComingSoon>Coming soon</ComingSoon>
           </SlideMenuItem>
-          <SlideMenuItem>
+          {/* <SlideMenuItem>
             Analytics
             <ComingSoon>Coming soon</ComingSoon>
           </SlideMenuItem>
           <SlideMenuItem>
             Vote
             <ComingSoon>Coming soon</ComingSoon>
-          </SlideMenuItem>
+          </SlideMenuItem> */}
           <SlideMenuItem>
             Enter App
             <ComingSoon>Coming soon</ComingSoon>

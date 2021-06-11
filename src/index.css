@@ -11,6 +11,7 @@ a {
     color: #FFFFFF;
     transition: color .4s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 a:hover {
     color: rgba(209, 213, 219, 1);
