@@ -187,6 +187,17 @@ const Mask = styled.div`
   //background: rgba(255, 255, 255, .5);
   z-index: 50;
 `
+
+const links = [
+  {
+    text: 'Docs',
+    href: 'https://docs.zk.link',
+  },
+  {
+    text: 'Blog',
+    href: 'https://zklinkdefi.medium.com',
+  }
+]
 const Nav = () => {
   const [hasBg, setHasBg] = useState(false)
   const [isOpenMenu, setIsOpenMenu] = useState(false)
@@ -227,7 +238,11 @@ const Nav = () => {
           </Logo>
           <Title>zk.Link</Title>
           <Menu>
-            <MenuItem href="https://docs.zk.link">Documentation</MenuItem>
+            {
+              links.map((item) => (
+                <MenuItem key={item.text} href={item.href}>{item.text}</MenuItem>
+              ))
+            }
             {/* <Coming offset={[0, -10]}>
               <MenuItem>Analytics</MenuItem>
             </Coming>
@@ -256,9 +271,11 @@ const Nav = () => {
 
         </Holder>
         <SlideMenu className={animeClass}>
-          <SlideMenuItem href="https://docs.zk.link">
-            Documentation
-          </SlideMenuItem>
+          {
+            links.map((item) => (
+              <SlideMenuItem key={item.text} href={item.href}>{item.text}</SlideMenuItem>
+            ))
+          }
           {/* <SlideMenuItem>
             Analytics
             <ComingSoon>Coming soon</ComingSoon>
