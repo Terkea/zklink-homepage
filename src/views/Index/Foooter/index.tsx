@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {device} from "../../../styles/media";
 import Community from "./Community";
+import logoUrl from './../../../assets/images/logo.png'
 
 const Wrap = styled.div`
   position: relative;
@@ -50,29 +51,44 @@ const GridTitle = styled.div`
   font-weight: 500;
   margin-bottom: 15px;
 `
+const JoinTitle = styled(GridTitle)`
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+`
 const Row = styled.div`
   color: rgba(189, 191, 198, .8);
   margin-top: 12px;
+`
+const JoinRow = styled(Row)`
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 16px;
 `
 const RowLink = styled.a`
   display: block;
   color: rgba(189, 191, 198, .8);
   margin-top: 12px;
-  
+`
+const FootLogo = styled.img`
+  width: 32px;
+  margin: 0 16px 0 0;
 `
 const Footer = () => {
 
   return (
     <Wrap>
       <Section>
+        <JoinItem>
+          <JoinTitle><FootLogo src={logoUrl} />zk.Link</JoinTitle>
+          <JoinRow>zkLink is a multi-chain integration DEX based on ZK-Rollup technology. We aim to link separate
+chains, aggregate multi-chain liquidity, and make it possible for native assets on different chains to interact and pair with each other.</JoinRow>
+        </JoinItem>
         <GridItem>
           <GridTitle>Contact Us</GridTitle>
           <Row>zklinkteam@zklink.org</Row>
-        </GridItem>
-        <JoinItem>
-          <GridTitle>Join the community</GridTitle>
           <Community />
-        </JoinItem>
+        </GridItem>
         <GridItem>
           <GridTitle>Products</GridTitle>
           <Row>Multi-chain Swap</Row>

@@ -2,11 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrap = styled.div`
+  margin-top: 16px;
 `
 const SvgIcon = styled.a`
   display: inline-flex;
   align-items: center;
   margin-right: 16px;
+  margin-top: 8px;
   svg {
     width: 20px;
     height: 20px;
