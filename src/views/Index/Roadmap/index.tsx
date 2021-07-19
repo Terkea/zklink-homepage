@@ -16,13 +16,12 @@ const Wrap = styled.div`
 const Satellite = styled.img.attrs({
   src: satelliteUrl,
 })`
-  width: 80%;
+  width: 90%;
   position: absolute;
-  top: 150px;
+  bottom: 0;
   left: 0;
   
   @media ${device.md} {
-    width: auto;
   }
 `
 const Section = styled.div`

@@ -4,7 +4,7 @@ import {device} from "../../../styles/media";
 
 
 const Wrap = styled.div`
-  max-width: 900px;
+  max-width: 980px;
   padding: 74px 20px 0;
   margin: 0 auto;
   
@@ -22,10 +22,11 @@ const Wrap = styled.div`
 const StatItem = styled.div`
   padding: 24px 0;
   text-align: center;
-  background: rgba(32, 34, 49, 1);
+  background: #202231;
   border-radius: 6px;
   transition: background-color .5s ease;
   cursor: default;
+  font-size: 14px;
   &:hover {
     background-color: rgba(40, 40, 41, 1);
   }
@@ -37,7 +38,7 @@ const StatItem = styled.div`
   }
   div {
     color: rgb(127, 127, 127);
-    margin-top: 12px;
+    margin-top: 8px;
   }
   
 `

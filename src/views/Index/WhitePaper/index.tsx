@@ -16,9 +16,8 @@ const Section = styled.div`
   max-width: 1066px;
   padding: 64px 20px 0;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   position: relative;
-  
   @media ${device.xl} {
     padding: 126px 0 0;
     
@@ -27,16 +26,13 @@ const Section = styled.div`
 const Satellite = styled.img.attrs({
   src: satelliteUrl,
 })`
-  width: 280px;
+  width: 80%;
   position: absolute;
-  top: 30%;
+  bottom: -20%;
   right: 0;
   @media ${device.sm} {
-    width: 380px;
   }
   @media ${device.xl} {
-    top: 33%;
-    width: 450px;
   }
 `
 const GradientBg = styled.img.attrs({
@@ -75,6 +71,8 @@ const GridItem = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  text-align: left;
+
   //backdrop-filter: blur(30px);
   //filter: blur(30px);
   /* transition: background-color .5s ease; */
@@ -82,18 +80,19 @@ const GridItem = styled.div`
     /* background-color: rgba(40, 40, 41, 1); */
   }
 
-
   @media ${device.xl} {
     margin-top: 0;
-    text-align: left;
   }
 `
 const GridRight = styled.div`
   display: flex;
   flex: 1;
   height: 100%;
-  padding: 100px 0 0;
+  padding: 0 0 0;
   flex-direction: column;
+  @media ${device.xl} {
+    padding: 100px 0 0;
+  }
 `
 const GridH3 = styled.div`
   display: flex;
@@ -108,6 +107,7 @@ const GridText = styled.div`
   font-size: 14px;
   margin-top: 20px;
   padding: 0 0 20px;
+  text-align: left;
   flex: 1;
 `
 const ZKL = styled(GridItem)`
@@ -161,12 +161,18 @@ const Line = styled.div`
   height: 1px;
   background: linear-gradient(270deg, #3C67E9 0%, #04D299 100%);
 `
+const Line2 = styled(Line)`
+  display: block;
+  @media ${device.xl} {
+    display: none;
+  }
+`
 const WhitePaper = () => {
 
 
   return (
     <Wrap>
-      <GradientBg />
+      {/* <GradientBg /> */}
       <Satellite />
       <Section>
         <SectionTitle>Documentation</SectionTitle>
@@ -176,6 +182,7 @@ const WhitePaper = () => {
             <GridH3><b>ZKL</b></GridH3>
             <GridText>ZKL is the governance token of zkLink, which is standardized with ERC20. The future development of zkLink will be voted on by DAO. There are three major scenarios for ZKL tokens: staking node, proposal initiation, and voting.</GridText>
           </ZKL>
+          <Line2 />
           <GridRight>
             <GridItem>
               <GridH3>Token Economy<Arrow></Arrow></GridH3>

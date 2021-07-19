@@ -52,11 +52,12 @@ const Grid = styled.div`
   }
 `
 const GridItem = styled.div`
-  background-color: rgba(23, 23, 23, 1);
+  background-color: rgba(23, 23, 23, .5);
   text-align: center;
   padding: 0 24px 32px;
   min-height: 320px;
   transition: background-color .5s ease;
+  border-radius: 18px;
   &:hover {
     background-color: rgba(40, 40, 41, 1);
   }
