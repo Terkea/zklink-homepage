@@ -85,7 +85,7 @@ const MenuItem = styled.a`
   font-weight: 400;
   text-shadow: 0 0 3px rgba(0,0,0,.7);
 `
-const Enter = styled.div`
+const Enter = styled.a`
   margin-left: 20px;
   padding: 0.5rem 1.5rem;
   border: 3px double transparent;
@@ -249,11 +249,9 @@ const Nav = () => {
             <Coming offset={[0, -10]}>
               <MenuItem>Vote</MenuItem>
             </Coming> */}
-            <Coming>
-              <Enter>
-                Enter App
-              </Enter>
-            </Coming>
+            <Enter href="https://test.zk.link" target="_blank">
+              Enter App Testnet
+            </Enter>
           </Menu>
           <MenuButton onClick={toggle}>
             {
@@ -284,9 +282,9 @@ const Nav = () => {
             Vote
             <ComingSoon>Coming soon</ComingSoon>
           </SlideMenuItem> */}
-          <SlideMenuItem>
-            Enter App
-            <ComingSoon>Coming soon</ComingSoon>
+          <SlideMenuItem href="https://test.zk.link" target="_blank">
+            Enter App Testnet
+            {/* <ComingSoon>Coming soon</ComingSoon> */}
           </SlideMenuItem>
         </SlideMenu>
       </AppNav>

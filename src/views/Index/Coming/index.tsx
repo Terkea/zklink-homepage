@@ -1,6 +1,7 @@
 import React, {FC, useRef, useState} from "react"
 import styled, {keyframes} from "styled-components";
 import utils from "../../../utils";
+import bg from './../../../assets/images/coming-bg.png'
 
 const FadeIn = keyframes`
   0% {
@@ -24,9 +25,12 @@ const Wrap = styled.div`
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    background-image: linear-gradient(to right, rgba(9, 160, 119, .9), rgba(32, 65, 164, .9));
-    width: 150px;
-    height: 56px;
+    background-image: url("${bg}");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 131px;
+    height: 60px;
+    font-size: 13px;
     border-radius: 6px;
     align-items: center;
     justify-content: center;

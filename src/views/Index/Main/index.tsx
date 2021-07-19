@@ -57,7 +57,7 @@ const ButtonGroup = styled.div`
   }
 `
 
-const BlockButton = styled.div`
+const BlockButton = styled.a`
   max-width: 420px;
   width: 100%;
   flex: 1;
@@ -93,9 +93,7 @@ const Main = () => {
       <Text>A Multi-Chain Integration DEX Based on ZK-Rollup</Text>
 
       <ButtonGroup>
-        <Coming>
-          <Enter>Enter App</Enter>
-        </Coming>
+        <Enter href="https://test.zk.link" target="_blank">Enter App Testnet</Enter>
       </ButtonGroup>
     </MainWrap>
   )
