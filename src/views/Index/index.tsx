@@ -9,6 +9,7 @@ import WhitePaper from "./WhitePaper";
 import Roadmap from "./Roadmap";
 import Footer from "./Foooter";
 import {device} from "../../styles/media";
+import Eco from "./Eco";
 
 const Wrapper = styled.div`
   background-image: url('${satelliteUrl}');
@@ -31,6 +32,7 @@ const Index = () => {
       <About />
       <WhitePaper />
       <Roadmap />
+      <Eco />
       <Footer />
     </Wrapper>
   )
