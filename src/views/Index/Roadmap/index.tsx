@@ -10,7 +10,7 @@ const Wrap = styled.div`
   position: relative;
   padding: 80px 0 0;
   @media ${device.md} {
-    padding: 126px 0 0;
+    padding: 80px 0 0;
   }
 `
 const Satellite = styled.img.attrs({
