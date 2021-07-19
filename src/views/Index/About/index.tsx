@@ -52,7 +52,7 @@ const Grid = styled.div`
   }
 `
 const GridItem = styled.div`
-  background-color: rgba(23, 23, 23, .5);
+  background-color: rgba(23, 23, 23, 1);
   text-align: center;
   padding: 0 24px 32px;
   min-height: 320px;

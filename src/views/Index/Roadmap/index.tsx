@@ -21,7 +21,8 @@ const Satellite = styled.img.attrs({
   bottom: 0;
   left: 0;
   
-  @media ${device.md} {
+  @media ${device.xl} {
+    bottom: -40%;
   }
 `
 const Section = styled.div`
