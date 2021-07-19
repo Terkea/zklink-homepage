@@ -9,12 +9,18 @@ const Wrap = styled.div`
 const Section = styled.div`
   max-width: 1120px;
   margin: 0 auto 40px;
+  padding: 0 24px;
+  @media ${device.md} {
+    padding: 0;
+
+  }
 `
 
 const Grid = styled.div`
   display: grid;
   margin: 40px 0 0;
   grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
   @media ${device.md} {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -23,8 +29,16 @@ const GridItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 120px;
+  height: auto;
+  padding: 16px 0;
+  @media ${device.sm} {
+    height: 100px;
+    padding: 0;
+  }
 
+  @media ${device.md} {
+    height: 120px;
+  }
   img {
     max-width: 100%;
     transform: scale(0.85);

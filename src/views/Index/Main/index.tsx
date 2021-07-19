@@ -4,46 +4,39 @@ import {device} from "../../../styles/media";
 import linkDiamondUrl from './../../../assets/images/link-diamond@2x.png'
 import Coming from "../Coming";
 
-const Logo = styled.img`
-  width: 180px;
-  margin-bottom: 0;
-  
-  @media ${device.sm} {
-    margin-bottom: 0;
-    width: 208px;
-  }
-`
+
 const MainWrap = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  max-width: 940px;
+  max-width: 1140px;
   padding: 150px 20px 0;
   margin: 0 auto;
+  position: relative;
+  text-align: center;
   @media ${device.sm} {
-    padding: 230px 20px 0;
+    padding: 160px 20px 0;
+  }
+  @media ${device.md} {
+    text-align: right;
   }
 `
 
 const H2 = styled.div`
-  text-align: center;
+  max-width: auto;
   font-size: 40px;
-  margin: 20px 0 0;
-  font-weight: 500;
+  font-weight: 700;
   text-shadow: 1px 1px 3px rgba(0,0,0,.4);
   @media ${device.md} {
     font-size: 54px;
+    max-width: 544px;
   }
   @media ${device.xl} {
     font-size: 72px;
   }
 `
 const Text = styled.div`
-  font-size: 15px;
+  font-size: 18px;
   margin: 30px 0 0;
-  color: rgb(227, 227, 227);
-  text-align: center;
-  font-weight: 300;
+  color: #9B9C9D;
+  font-weight: 400;
   text-shadow: 1px 1px 3px rgba(0,0,0,.4);
   @media ${device.md} {
     font-size: 18px;
@@ -51,9 +44,12 @@ const Text = styled.div`
 `
 
 const ButtonGroup = styled.div`
+  display: inline-block;
   width: 280px;
-  margin-top: 32px;
+  margin-top: 20px;
   @media ${device.md} {
+    display: block;
+    margin-top: 70px;
   }
 `
 
@@ -74,6 +70,17 @@ const BlockButton = styled.a`
   @media ${device.md} {
   }
 `
+const MainText = styled.div`
+  padding: 0 16px;
+  text-align: center;
+
+  @media ${device.md} {
+    text-align: left;
+    position: absolute;
+    top: 200px;
+    left: 0;
+  }
+`
 const Enter = styled(BlockButton)`
   background-image: linear-gradient(to right, #03D498, #3C67E9), linear-gradient(to right, #09A077, #2041A4);
   box-shadow: 0 0 15px -3px rgba(0,0,0,1);
@@ -83,18 +90,39 @@ const Enter = styled(BlockButton)`
 const More = styled(BlockButton)`
   background-color: rgb(46, 51, 72);
 `
+const MainImage = styled.div`
+  img {
+    width: 300px;
+    @media ${device.sm} {
+      width: 400px;
+    }
+    @media ${device.md} {
+      width: 500px;
+    }
 
+    @media ${device.lg} {
+      width: 600px;
+    }
+  }
+
+`
 const Main = () => {
 
   return (
     <MainWrap>
-      <Logo src={linkDiamondUrl} />
-      <H2>Connect Chains Together</H2>
-      <Text>A Multi-Chain Integration DEX Based on ZK-Rollup</Text>
+      {/* <Logo src={linkDiamondUrl} /> */}
+      <MainImage>
+        <img src={require('./../../../assets/images/main.png').default} />
+      </MainImage>
+      <MainText>
+        <H2>Connect Chains Together</H2>
+        <Text>A Multi-Chain Integration DEX Based on ZK-Rollup</Text>
+        
+        <ButtonGroup>
+          <Enter href="https://test.zk.link" target="_blank">Enter App Testnet</Enter>
+        </ButtonGroup>
+      </MainText>
 
-      <ButtonGroup>
-        <Enter href="https://test.zk.link" target="_blank">Enter App Testnet</Enter>
-      </ButtonGroup>
     </MainWrap>
   )
 }
