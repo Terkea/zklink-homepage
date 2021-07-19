@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {SectionTitle} from "../../../styles";
 import satelliteUrl from "../../../assets/images/roadmap-satellite.png";
 import roadmapLineUrl from "../../../assets/images/roadmap.png";
+import roadmapLineUrl2x from "../../../assets/images/roadmap@2x.png";
 import roadmapLineMobileUrl from "../../../assets/images/roadmap-line-m@2x.png";
 import {device} from "../../../styles/media";
 const Wrap = styled.div`
@@ -25,7 +26,7 @@ const Satellite = styled.img.attrs({
   }
 `
 const Section = styled.div`
-  max-width: 1076px;
+  max-width: 1087px;
   margin: 0 auto;
 `
 const Road = styled.div`
@@ -36,11 +37,12 @@ const Road = styled.div`
     padding: 177px 0 258px;
   }
 `
-const Line = styled.img.attrs({
-  src: roadmapLineUrl,
-})`
+const Line = styled.div`
   width: 100%;
   user-select: none;
+  img {
+    width: 100%;
+  }
 `
 const LineMobile = styled.div`
   width: 6px;
@@ -50,6 +52,7 @@ const LineMobile = styled.div`
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center 0;
+
 
 `
 const LineMap = styled.div`
@@ -186,7 +189,12 @@ const Roadmap = () => {
         <SectionTitle>Roadmap</SectionTitle>
         <Road>
           <LineMap>
-            <Line />
+            <Line>
+            <picture>
+              <source srcSet={`${roadmapLineUrl}, ${roadmapLineUrl2x} 2x`} media="(min-width: 1000px)" />
+              <img />
+            </picture>
+            </Line>
             <LineMobile />
             <DotGroup>
               <Dot1>
