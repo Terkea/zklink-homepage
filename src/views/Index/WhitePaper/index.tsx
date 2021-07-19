@@ -30,6 +30,7 @@ const Satellite = styled.img.attrs({
   position: absolute;
   bottom: -20%;
   right: 0;
+  z-index: -1;
   @media ${device.sm} {
   }
   @media ${device.xl} {
@@ -63,10 +64,11 @@ const Grid = styled.div`
     flex-direction: row;
   }
 `
+
 const GridItem = styled.div`
   /* background-color: rgba(23, 23, 23, .8); */
   border-radius: 18px;
-  padding: 38px 0 24px;
+  padding: 38px 0 16px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -76,13 +78,23 @@ const GridItem = styled.div`
   //backdrop-filter: blur(30px);
   //filter: blur(30px);
   /* transition: background-color .5s ease; */
+  &:after {
+    content: '';
+    height: 1px;
+    background: linear-gradient(270deg, #3C67E9 0%, #04D299 100%);
+    opacity: 0;
+    transition: opacity .4s ease;
+  }
   &:hover {
-    /* background-color: rgba(40, 40, 41, 1); */
+    &:after {
+      opacity: 1;
+    }
   }
 
   @media ${device.xl} {
     margin-top: 0;
   }
+  
 `
 const GridRight = styled.div`
   display: flex;
@@ -146,6 +158,7 @@ const GridFoot = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 24px;
 `
 const Coming = styled.div`
   color: #fff;
@@ -157,16 +170,7 @@ const Arrow = styled.img.attrs({
   width: 39px;
   height: 39px;
 `
-const Line = styled.div`
-  height: 1px;
-  background: linear-gradient(270deg, #3C67E9 0%, #04D299 100%);
-`
-const Line2 = styled(Line)`
-  display: block;
-  @media ${device.xl} {
-    display: none;
-  }
-`
+
 const WhitePaper = () => {
 
 
@@ -182,7 +186,6 @@ const WhitePaper = () => {
             <GridH3><b>ZKL</b></GridH3>
             <GridText>ZKL is the governance token of zkLink, which is standardized with ERC20. The future development of zkLink will be voted on by DAO. There are three major scenarios for ZKL tokens: staking node, proposal initiation, and voting.</GridText>
           </ZKL>
-          <Line2 />
           <GridRight>
             <GridItem>
               <GridH3>Token Economy<Arrow></Arrow></GridH3>
@@ -192,13 +195,11 @@ const WhitePaper = () => {
                 
               </GridFoot>
             </GridItem>
-            <Line />
             <GridItem>
               <GridH3>Whitepaper<Arrow></Arrow></GridH3>
               <GridText>The whitepaper elaborates how zkLink implement zero-knowledge techniques and DAO governance model to guarantee the security and consistency of multi-chain interoperability, and to create multi-chain DeFi scenarios such as trading, loaning and revenue aggregating with a safe, eﬀicient and low-cost user experience.</GridText>
               <GridFoot>
                 <Coming>Coming soon</Coming>
-                
               </GridFoot>
             </GridItem>
           </GridRight>

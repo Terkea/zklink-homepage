@@ -20,7 +20,7 @@ const Satellite = styled.img.attrs({
   position: absolute;
   bottom: 0;
   left: 0;
-  
+  z-index: -1;
   @media ${device.xl} {
     bottom: -40%;
   }
