@@ -92,7 +92,7 @@ const More = styled(BlockButton)`
 `
 const MainImage = styled.div`
   img {
-    width: 300px;
+    width: 320px;
     @media ${device.sm} {
       width: 400px;
     }

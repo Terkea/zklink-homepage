@@ -199,14 +199,14 @@ const Roadmap = () => {
             <DotGroup>
               <Dot1>
                 <EventDown>
-                  <EventTitle><CircleMobile />2021Q2</EventTitle>
+                  <EventTitle><CircleMobile />2021Q3</EventTitle>
                   <EventRow>1. Launch the testnet</EventRow>
                   <EventRow>2. Support swapping with multi-chain assets</EventRow>
                 </EventDown>
               </Dot1>
               <Dot2>
                 <EventUp>
-                  <EventTitle><CircleMobile />2021Q3</EventTitle>
+                  <EventTitle><CircleMobile />2021Q4</EventTitle>
                   <EventRow>1. Launch zkLink mainnet V1</EventRow>
                   <EventRow>2. Support cross-chain farming and staking</EventRow>
                   <EventRow>3. Support concentrated liquidity of Uniswap V3</EventRow>
@@ -215,7 +215,7 @@ const Roadmap = () => {
               </Dot2>
               <Dot3>
                 <EventDown>
-                  <EventTitle><CircleMobile />2021Q4</EventTitle>
+                  <EventTitle><CircleMobile />2022Q1</EventTitle>
                   <EventRow>1. Launch zkLink V2</EventRow>
                   <EventRow>2. Support lending</EventRow>
                   <EventRow>3. Support yield aggregator</EventRow>
@@ -223,7 +223,7 @@ const Roadmap = () => {
               </Dot3>
               <Dot4>
                 <EventUp>
-                  <EventTitle><CircleMobile />2022Q1</EventTitle>
+                  <EventTitle><CircleMobile />2022Q2</EventTitle>
                   <EventRow>1. Launch zkLink V3</EventRow>
                   <EventRow>2. Support more public chains</EventRow>
                   <EventRow>3. Support NFT</EventRow>
