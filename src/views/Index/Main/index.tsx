@@ -16,6 +16,10 @@ const MainWrap = styled.div`
   }
   @media ${device.md} {
     text-align: right;
+    height: 590px;
+  }
+  @media ${device.lg} {
+    height: 670px;
   }
 `
 
