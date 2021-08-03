@@ -120,7 +120,7 @@ const Main = () => {
       </MainImage>
       <MainText>
         <H2>Connect Chains Together</H2>
-        <Text>A Multi-Chain Integration DEX Based on ZK-Rollup</Text>
+        <Text>A trustless chain-to-chain DEX based on zero-knowledge technology.</Text>
         
         <ButtonGroup>
           <Enter href="https://test.zk.link" target="_blank">Enter App Testnet</Enter>

@@ -81,8 +81,7 @@ const Footer = () => {
       <Section>
         <JoinItem>
           <JoinTitle><FootLogo src={logoUrl} />zk.Link</JoinTitle>
-          <JoinRow>zkLink is a multi-chain integration DEX based on ZK-Rollup technology. We aim to link separate
-chains, aggregate multi-chain liquidity, and make it possible for native assets on different chains to interact and pair with each other.</JoinRow>
+          <JoinRow>zkLink is a trustless chain-to-chain DEX based on zero-knowledge technology. As the bridging component among isolated chains and layer2 networks, zkLink makes it possible for native assets on separate ecos to interoperate and pair with each other.</JoinRow>
         </JoinItem>
         <GridItem>
           <GridTitle>Contact Us</GridTitle>

@@ -4,6 +4,7 @@ import EarthUrl from './../../../assets/images/earth.png'
 import About1Url from './../../../assets/images/about1.png'
 import About2Url from './../../../assets/images/about2.png'
 import About3Url from './../../../assets/images/about3.png'
+import About4Url from './../../../assets/images/about4.png'
 import { SectionTitle } from "../../../styles";
 import {device} from "../../../styles/media";
 const Wrap = styled.div`
@@ -48,7 +49,7 @@ const Grid = styled.div`
   @media ${device.md} {
     max-width: none;
     grid-row-gap: 22px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 `
 const GridItem = styled.div`
@@ -66,6 +67,9 @@ const Icon = styled.div`
   width: 124px;
   height: 124px;
   margin: -62px auto 0;
+  img {
+    width: 100%
+  }
 `
 const GridTitle = styled.div`
   //display: flex;
@@ -84,6 +88,32 @@ const GridText = styled.div`
   margin-top: 24px;
   color: rgba(149, 152, 163, 1);
 `
+
+const GridTextListItem = styled(GridText)`
+  position: relative;
+  margin: 0;
+  text-align: left;
+  font-size: 12px;
+  line-height: 20px;
+  color: #7A7B7C;
+  word-break: break-all;
+  padding-left: 10px;
+  &.grid-list-item {
+    margin-top: 10px
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #04D299;
+    left: 0;
+    top: 7px;
+  }
+`
+
 const About = () => {
 
   return (
@@ -93,7 +123,7 @@ const About = () => {
           About zkLink
         </SectionTitle>
         <Text>
-          zkLink is a multi-chain integration DEX based on ZK-Rollup. Our community is devoted to build a decentralized and comprehensive platform for financial scenarios. Come and join us!
+          zkLink is a trustless chain-to-chain DEX based on zero-knowledge technology. Our community is devoted to providing decentralized and permissionless DeFi scenarios with cross-chain tokens in a sleek user experience. Come and explore!
         </Text>
 
         <Grid>
@@ -101,22 +131,32 @@ const About = () => {
             <Icon>
               <img src={About1Url} alt=""/>
             </Icon>
-            <GridTitle>“One-Click” Cross-Chain Trading</GridTitle>
-            <GridText> zkLink supports one-click swapping with assets on different chains. The Layer2 liquidity pool model refers to Uniswap V3  so that the user experience is further improved by concentrated liquidity and real-time trading.</GridText>
+            <GridTitle>Swap</GridTitle>
+            <GridText>Direct swapping with multi-chain tokens by zero-knowledge technique.</GridText>
+            <GridTextListItem className="grid-list-item">Based on AMM model.</GridTextListItem>
+            <GridTextListItem>Instant finality of transactions, compared with a long wait-time of other cross-chain solutions.</GridTextListItem>
+            <GridTextListItem>No intermediary required, as direct liquidity pairs composed with native assets from separate chains are built.</GridTextListItem>
           </GridItem>
           <GridItem>
             <Icon>
               <img src={About2Url} alt=""/>
             </Icon>
-            <GridTitle>Asset Security</GridTitle>
-            <GridText>Compared to cross-chain bridges, zkLink's Layer2 network is built by ZK-Rollup technology, so that direct transactions can be achieved without a third-party. In this manner, asset security is guaranteed.</GridText>
+            <GridTitle>L2 StableSwap</GridTitle>
+            <GridText>Liquidity pools composed with the same kind of tokens on separate chains, such as USDT (ERC-20) - USDT (BEP-20), with a stablecoin-specialized AMM curve and lower slippage.</GridText>
           </GridItem>
           <GridItem>
             <Icon>
               <img src={About3Url} alt=""/>
             </Icon>
-            <GridTitle>Lower Fees, Higher TPS</GridTitle>
-            <GridText>zkLink helps users to considerably save transaction fees with no hidden cross-chain costs. Thanks to the implementation of ZK-Rollup, our TPS has been appproved by several orders of magnitude.</GridText>
+            <GridTitle>Fast Cross Chain Swap</GridTitle>
+            <GridText>Fast cross-chain transaction service for some pairs, where traders can enjoy chain interoperability on Layer1 without depositing tokens to zkLink Layer2 in advance. The validity of cross-chain transactions is guaranteed with recursive SNARKs.</GridText>
+          </GridItem>
+          <GridItem>
+            <Icon>
+              <img src={About4Url} alt=""/>
+            </Icon>
+            <GridTitle>Widget & SDK</GridTitle>
+            <GridText>A brand new deposit channel for third-party DeFi projects in forms of widget or SDK, where their users can enjoy fast cross chain swapping without leaving their platforms, such as Vaults, Lending, etc. </GridText>
           </GridItem>
         </Grid>
       </Section>

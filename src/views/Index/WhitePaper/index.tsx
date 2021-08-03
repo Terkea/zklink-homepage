@@ -189,7 +189,7 @@ const WhitePaper = () => {
           <GridRight>
             <GridItem>
               <GridH3>Token Economy<Arrow></Arrow></GridH3>
-              <GridText>The detailed information of ZKL, its usage scenarios, its allocation model and the deflation model are explained in this paper.</GridText>
+              <GridText>Upon ZKL release, more detailed information such as usage scenarios, allocation and deflation model will be explained in this paper.</GridText>
               <GridFoot>
                 <Coming>Coming soon</Coming>
                 
@@ -197,7 +197,7 @@ const WhitePaper = () => {
             </GridItem>
             <GridItem>
               <GridH3>Whitepaper<Arrow></Arrow></GridH3>
-              <GridText>The whitepaper elaborates how zkLink implement zero-knowledge techniques and DAO governance model to guarantee the security and consistency of multi-chain interoperability, and to create multi-chain DeFi scenarios such as trading, loaning and revenue aggregating with a safe, eﬀicient and low-cost user experience.</GridText>
+              <GridText>The whitepaper throughly elaborates the background, product features, protocols, and technology of zkLink, in a 5W1H framework.</GridText>
               <GridFoot>
                 <Coming>Coming soon</Coming>
               </GridFoot>
