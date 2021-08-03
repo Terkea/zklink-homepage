@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "zklink-homepage",
+      "script": "npm",
+      "args" : "start"
+    }
+  ]
+}
