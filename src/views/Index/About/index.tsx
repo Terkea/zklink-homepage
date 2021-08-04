@@ -123,7 +123,7 @@ const About = () => {
           About zkLink
         </SectionTitle>
         <Text>
-          zkLink is a trustless chain-to-chain DEX based on zero-knowledge technology. Our community is devoted to providing decentralized and permissionless DeFi scenarios with cross-chain tokens in a sleek user experience. Come and explore!
+        zkLink is a multi-chain assets aggregation platform offering trustless chain-to-chain liquidity transfer solution based on ZK technology. Our community is devoted to providing decentralized and permissionless DeFi scenarios with cross-chain tokens in a sleek user experience. Come and explore!
         </Text>
 
         <Grid>
@@ -132,7 +132,7 @@ const About = () => {
               <img src={About1Url} alt=""/>
             </Icon>
             <GridTitle>Swap</GridTitle>
-            <GridText>Direct swapping with multi-chain tokens by zero-knowledge technique.</GridText>
+            <GridText>Direct swapping with multi-chain tokens by zero-knowledge technology.</GridText>
             {/* <GridTextListItem className="grid-list-item">Based on AMM model.</GridTextListItem>
             <GridTextListItem>Instant finality of transactions, compared with a long wait-time of other cross-chain solutions.</GridTextListItem>
             <GridTextListItem>No intermediary required, as direct liquidity pairs composed with native assets from separate chains are built.</GridTextListItem> */}

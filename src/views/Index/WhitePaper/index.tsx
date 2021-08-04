@@ -189,7 +189,7 @@ const WhitePaper = () => {
           <GridRight>
             <GridItem>
               <GridH3>Token Economy<Arrow></Arrow></GridH3>
-              <GridText>Upon ZKL release, more detailed information such as usage scenarios, allocation and deflation model will be explained in this paper.</GridText>
+              <GridText>Detailed information will be disclosed upon ZKL release.</GridText>
               <GridFoot>
                 <Coming>Coming soon</Coming>
                 
