@@ -81,7 +81,7 @@ const Footer = () => {
       <Section>
         <JoinItem>
           <JoinTitle><FootLogo src={logoUrl} />zk.Link</JoinTitle>
-          <JoinRow>zkLink is a trustless chain-to-chain DEX based on zero-knowledge technology. As the bridging component among isolated chains and layer2 networks, zkLink makes it possible for native assets on separate ecos to interoperate and pair with each other.</JoinRow>
+          <JoinRow>A trustless chain-to-chain liquidity transfer station of DeFi-verse.</JoinRow>
         </JoinItem>
         <GridItem>
           <GridTitle>Contact Us</GridTitle>

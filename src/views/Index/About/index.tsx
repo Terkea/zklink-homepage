@@ -133,30 +133,30 @@ const About = () => {
             </Icon>
             <GridTitle>Swap</GridTitle>
             <GridText>Direct swapping with multi-chain tokens by zero-knowledge technique.</GridText>
-            <GridTextListItem className="grid-list-item">Based on AMM model.</GridTextListItem>
+            {/* <GridTextListItem className="grid-list-item">Based on AMM model.</GridTextListItem>
             <GridTextListItem>Instant finality of transactions, compared with a long wait-time of other cross-chain solutions.</GridTextListItem>
-            <GridTextListItem>No intermediary required, as direct liquidity pairs composed with native assets from separate chains are built.</GridTextListItem>
+            <GridTextListItem>No intermediary required, as direct liquidity pairs composed with native assets from separate chains are built.</GridTextListItem> */}
           </GridItem>
           <GridItem>
             <Icon>
               <img src={About2Url} alt=""/>
             </Icon>
             <GridTitle>L2 StableSwap</GridTitle>
-            <GridText>Liquidity pools composed with the same kind of tokens on separate chains, such as USDT (ERC-20) - USDT (BEP-20), with a stablecoin-specialized AMM curve and lower slippage.</GridText>
+            <GridText>Transit your stablecoin between separate chains, with negligible slippage.</GridText>
           </GridItem>
           <GridItem>
             <Icon>
               <img src={About3Url} alt=""/>
             </Icon>
             <GridTitle>Fast Cross Chain Swap</GridTitle>
-            <GridText>Fast cross-chain transaction service for some pairs, where traders can enjoy chain interoperability on Layer1 without depositing tokens to zkLink Layer2 in advance. The validity of cross-chain transactions is guaranteed with recursive SNARKs.</GridText>
+            <GridText>Enjoy chain interoperability on Layer1 without depositing tokens to zkLink Layer2 in advance. </GridText>
           </GridItem>
           <GridItem>
             <Icon>
               <img src={About4Url} alt=""/>
             </Icon>
             <GridTitle>Widget & SDK</GridTitle>
-            <GridText>A brand new deposit channel for third-party DeFi projects in forms of widget or SDK, where their users can enjoy fast cross chain swapping without leaving their platforms, such as Vaults, Lending, etc. </GridText>
+            <GridText>A brand new deposit channel for third-party DeFi projects in forms of widget or SDK.</GridText>
           </GridItem>
         </Grid>
       </Section>
