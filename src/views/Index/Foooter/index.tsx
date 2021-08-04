@@ -90,19 +90,21 @@ const Footer = () => {
         </GridItem>
         <GridItem>
           <GridTitle>Products</GridTitle>
-          <Row>Multi-chain Swap</Row>
-          {/*<Row>zkLink Lend</Row>*/}
-          <Row>API</Row>
+          <Row>Fast Cross Chain Swap</Row>
+          <Row>L2 Swap</Row>
+          <Row>L2 Mirror (Stable Swap)</Row>
+          <Row>L2 Liquidity</Row>
         </GridItem>
         <GridItem>
           <GridTitle>Support</GridTitle>
           <RowLink href={"https://docs.zk.link"}>Documentation</RowLink>
-
-          <Row>Forum</Row>
+          <RowLink href={"https://discord.com/invite/9GCwxN7xaJ"}>Forum</RowLink>
         </GridItem>
         <GridItem>
-          <GridTitle>Protocol</GridTitle>
-          <Row>Vote</Row>
+          <GridTitle>Developer</GridTitle>
+          <RowLink href={"https://docs.zk.link/docs/Product/widget"}>API</RowLink>
+          <RowLink href={"https://docs.zk.link/docs/Product/widget"}>SDK</RowLink>
+          <RowLink href={"https://docs.zk.link/docs/Product/widget"}>Widget</RowLink>
         </GridItem>
       </Section>
     </Wrap>
