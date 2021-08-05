@@ -196,6 +196,10 @@ const links = [
   {
     text: 'Blog',
     href: 'https://zklinkdefi.medium.com',
+  },
+  {
+    text: 'Audit',
+    href: 'https://github.com/zkLinkProtocol/zklink-audit-report',
   }
 ]
 const Nav = () => {
