@@ -129,9 +129,16 @@ const About = () => {
         <Grid>
           <GridItem>
             <Icon>
+              <img src={About3Url} alt=""/>
+            </Icon>
+            <GridTitle>Fast Cross Chain Swap</GridTitle>
+            <GridText>Enjoy chain interoperability on Layer1 without depositing tokens to zkLink Layer2 in advance. </GridText>
+          </GridItem>
+          <GridItem>
+            <Icon>
               <img src={About1Url} alt=""/>
             </Icon>
-            <GridTitle>Swap</GridTitle>
+            <GridTitle>L2 Swap</GridTitle>
             <GridText>Direct swapping with multi-chain tokens by zero-knowledge technology.</GridText>
             {/* <GridTextListItem className="grid-list-item">Based on AMM model.</GridTextListItem>
             <GridTextListItem>Instant finality of transactions, compared with a long wait-time of other cross-chain solutions.</GridTextListItem>
@@ -141,15 +148,8 @@ const About = () => {
             <Icon>
               <img src={About2Url} alt=""/>
             </Icon>
-            <GridTitle>L2 StableSwap</GridTitle>
+            <GridTitle>L2 Mirror <br />(Stable Swap)</GridTitle>
             <GridText>Transit your stablecoin between separate chains, with negligible slippage.</GridText>
-          </GridItem>
-          <GridItem>
-            <Icon>
-              <img src={About3Url} alt=""/>
-            </Icon>
-            <GridTitle>Fast Cross Chain Swap</GridTitle>
-            <GridText>Enjoy chain interoperability on Layer1 without depositing tokens to zkLink Layer2 in advance. </GridText>
           </GridItem>
           <GridItem>
             <Icon>
